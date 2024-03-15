@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import LoginView from './components/views/login/login';
+// import LoginView from './components/views/login/login';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ForgotPasswordView from './components/views/login/forgot-password';
 import CreatePasswordView from './components/views/login/create-password';
 import ForgotSuccessMsgView from './components/views/login/forgot-success-msg';
 import Dashboard from './components/views/login/dashboard';
-import LoginPage from './components/views/login/loginpage';
+// import LoginPage from './components/views/login/loginpage';
 
 
 
@@ -59,8 +59,8 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-      <Route path="/login" element={<LoginView />} />
-      <Route path="/loginpage" element={<LoginPage />} />
+{/*       <Route path="/login" element={<LoginView />} /> */}
+{/*       <Route path="/loginpage" element={<LoginPage />} /> */}
       <Route path="/forgot-password" element={<ForgotPasswordView/>} />
       <Route path="/create-password" element={<CreatePasswordView/>} />
       <Route path="/success-msg" element={<ForgotSuccessMsgView/>} />
